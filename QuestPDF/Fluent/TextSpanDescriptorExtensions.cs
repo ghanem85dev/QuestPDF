@@ -50,7 +50,7 @@ namespace QuestPDF.Fluent
             descriptor.TextStyle.IsItalic = value;
             return descriptor;
         }
-        
+
         public static T Strikethrough<T>(this T descriptor, bool value = true) where T : TextSpanDescriptor
         {
             descriptor.TextStyle.HasStrikethrough = value;

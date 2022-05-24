@@ -61,7 +61,7 @@ namespace QuestPDF.Fluent
         {
             return style.Mutate(x => x.IsItalic = value);
         }
-        
+
         public static TextStyle Strikethrough(this TextStyle style, bool value = true)
         {
             return style.Mutate(x => x.HasStrikethrough = value);

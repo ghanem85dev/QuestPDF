@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using QuestPDF.Drawing;
 using QuestPDF.Elements.Text.Calculation;
 using QuestPDF.Infrastructure;
@@ -75,7 +76,7 @@ namespace QuestPDF.Elements.Text.Items
 
             // measure final text
             var width = paint.MeasureText(text);
-            
+
             return new TextMeasurementResult
             {
                 Width = width,
@@ -167,6 +168,6 @@ namespace QuestPDF.Elements.Text.Items
 
                 return fontSize * offsetFactor;
             }
-        }
+        }       
     }
 }
